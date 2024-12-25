@@ -1,5 +1,6 @@
+import LoginPage from "@/components/LoginPage";
 import { NEXT_AUTH_CONFIG } from "@/lib/auth";
-import DashboardPage from "@/components/Dashboard";
+
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 
@@ -12,8 +13,9 @@ async function getUser() {
 
 export default async function Page() {
   const session = await getUser();
-  if (!session) {
-    redirect("/login");
+  if (session) {
+    redirect("/");
+  } else {
+    return <LoginPage />;
   }
-  return <DashboardPage />;
 }
