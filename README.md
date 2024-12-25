@@ -33,6 +33,7 @@ CodeAnt AI, a web application that allows users to create, manage, and collabora
 3. - Rename `.env.example` to `.env` and add the following environment variables:
 
    - `DATABASE_URL`: This should be your PostgreSQL database URL. For example, If you're using a PostgreSQL provider like Neon.tech, Supabase, Aiven, etc., use the URL they provide.
+   - `NextAuth_URL`: localhost:3000 or your domain
    - `GITHUB_ID`: Your Github ID
    - `GITHUB_SECRET`: Your Github Secret
 

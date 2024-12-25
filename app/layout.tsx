@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "CodeAnt AI",
-  description: "Assignment for frontend developer intern.",
+  description: "Assignment for CodeAnt AI",
 };
 
 export default function RootLayout({
