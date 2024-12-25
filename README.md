@@ -10,8 +10,14 @@ CodeAnt AI, a web application that allows users to create, manage, and collabora
 - **Performance**
 - **Responsiveness**
 
+## Tech Stack
 
-## Instructions to Run the Application
+- **Frontend:** NextJS(React)
+- **Backend:** NextJS
+- **authentication:** NextAuth
+- **Database:** PostgreSQL
+
+## Development Setup
 
 1. **Clone the repository:**
 
@@ -24,13 +30,23 @@ CodeAnt AI, a web application that allows users to create, manage, and collabora
     npm install
     ```
 
-### Running the Project
-1. Start the backend s:
-    ```sh
-    npm run server
-    ```
-2. Start the frontend development server:
-    ```sh
-    npm start
-    ```
+3. - Rename `.env.example` to `.env` and add the following environment variables:
 
+   - `DATABASE_URL`: This should be your PostgreSQL database URL. For example, If you're using a PostgreSQL provider like Neon.tech, Supabase, Aiven, etc., use the URL they provide.
+   - `GITHUB_ID`: Your Github ID
+   - `GITHUB_SECRET`: Your Github Secret
+
+4. Run Prisma migrations. This command will apply the database schema changes:
+
+   ```bash
+   npx prisma migrate dev --name init
+   ```
+
+5. Generate the Prisma client. This command will generate the Prisma client code:
+   ```bash
+   npx prisma generate
+   ```
+6. Start the development server:
+   ```bash
+   npm run dev
+   ```
