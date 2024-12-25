@@ -10,6 +10,10 @@ CodeAnt AI, a web application that allows users to create, manage, and collabora
 - **Performance**
 - **Responsiveness**
 
+## Hosted Link
+
+You can access the live application at [codeant.ai.devprojects.world](https://codeant.ai.devprojects.world).
+
 ## Tech Stack
 
 - **Frontend:** NextJS(React)
